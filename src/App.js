@@ -93,10 +93,8 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <h1 className="App-title">{this.state.appTitle}</h1>
-                </header>
+
+                <Header/>
                 <div>
                     <AddToDo clicked={this.clickAdd}/>
                 </div>
@@ -104,6 +102,10 @@ class App extends Component {
                     {/*Lets use properties to handle requests from other components*/}
                     <ListToDoV2 todos={this.state.todos} clickedDelete={this.clickDelete}
                                 clickedComplete={this.clickComplete}/>
+                </div>
+                <div>
+
+
                 </div>
             </div>
 
